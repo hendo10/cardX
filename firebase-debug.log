@@ -1,0 +1,76 @@
+[debug] [2020-01-27T20:04:52.285Z] ----------------------------------------------------------------------
+[debug] [2020-01-27T20:04:52.287Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-01-27T20:04:52.288Z] CLI Version:   7.12.1
+[debug] [2020-01-27T20:04:52.288Z] Platform:      darwin
+[debug] [2020-01-27T20:04:52.288Z] Node Version:  v10.16.0
+[debug] [2020-01-27T20:04:52.289Z] Time:          Mon Jan 27 2020 15:04:52 GMT-0500 (Eastern Standard Time)
+[debug] [2020-01-27T20:04:52.289Z] ----------------------------------------------------------------------
+[debug] [2020-01-27T20:04:52.289Z] 
+[debug] [2020-01-27T20:04:52.299Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-27T20:04:52.300Z] > authorizing via signed-in user
+[debug] [2020-01-27T20:04:52.300Z] [iam] checking project cardx-f717f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-01-27T20:04:52.302Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cardx-f717f:testIamPermissions  
+
+[debug] [2020-01-27T20:04:52.462Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-27T20:04:52.464Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cardx-f717f  
+ 
+[debug] [2020-01-27T20:04:52.788Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'cardx-f717f'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-01-27T20:04:52.796Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/cardx-f717f/versions  
+
+[debug] [2020-01-27T20:05:03.063Z] <<< HTTP RESPONSE 503
+[debug] [2020-01-27T20:05:03.063Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 503, The service is currently unavailable.
+[debug] [2020-01-27T20:05:03.158Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 503,
+      "message": "The service is currently unavailable.",
+      "status": "UNAVAILABLE"
+    }
+  },
+  "response": {
+    "statusCode": 503,
+    "body": {
+      "error": {
+        "code": 503,
+        "message": "The service is currently unavailable.",
+        "status": "UNAVAILABLE"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Mon, 27 Jan 2020 20:05:02 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/cardx-f717f/versions",
+        "path": "/v1beta1/sites/cardx-f717f/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/cardx-f717f/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
