@@ -2,7 +2,7 @@
 
 export default {
   firebaseConfig: {
-    apiKey: "AIzaSyBLmsjD534yrONfj-09Q9KLLDii9_YyiLA",
+    apiKey: "APIKEY",
     authDomain: "cardxdb.firebaseapp.com",
     databaseURL: "https://1911-cardx.firebaseio.com",
     projectId: "cardx-f717f",
